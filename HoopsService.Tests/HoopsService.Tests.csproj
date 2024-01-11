@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="tournament\" />
+    <ProjectReference Include="..\HoopsService\HoopsService.csproj" />
   </ItemGroup>
 
 </Project>

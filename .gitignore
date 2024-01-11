@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/HoopsService.Tests/bin/Debug/net8.0
+/HoopsService/bin/Debug/net8.0
+/HoopsService.Tests/obj
