@@ -14,7 +14,6 @@ namespace HoopsService.Tests.tournament
             var field = new Field();
             field.AddTeam(team);
             Option<Team> checkTeam = field.GetTeamById(1);
-            Assert.True(checkTeam.IsSome);
             Assert.Equal(team, checkTeam);
         }
     }
