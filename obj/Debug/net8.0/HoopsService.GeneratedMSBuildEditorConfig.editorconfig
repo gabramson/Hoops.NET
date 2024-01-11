@@ -1,0 +1,47 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HoopsService
+build_property.RootNamespace = HoopsService
+build_property.ProjectDir = E:\Projects\C#\Hoops.Net\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Projects\C#\Hoops.Net
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Projects/C\#/Hoops.Net/HoopsService/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = SG9vcHNTZXJ2aWNlXFBhZ2VzXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Projects/C\#/Hoops.Net/HoopsService/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = SG9vcHNTZXJ2aWNlXFBhZ2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Projects/C\#/Hoops.Net/HoopsService/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = SG9vcHNTZXJ2aWNlXFBhZ2VzXFByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Projects/C\#/Hoops.Net/HoopsService/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = SG9vcHNTZXJ2aWNlXFBhZ2VzXFNoYXJlZFxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Projects/C\#/Hoops.Net/HoopsService/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = SG9vcHNTZXJ2aWNlXFBhZ2VzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Projects/C\#/Hoops.Net/HoopsService/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = SG9vcHNTZXJ2aWNlXFBhZ2VzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Projects/C\#/Hoops.Net/HoopsService/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = SG9vcHNTZXJ2aWNlXFBhZ2VzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-fx6pg4t5cz
