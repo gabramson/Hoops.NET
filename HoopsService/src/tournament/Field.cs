@@ -11,14 +11,15 @@ namespace Hoops.Service
             teams = new List<Team>();
         }
 
-        public void AddTeam(Team team)
+        public Either<Exception,Team> AddTeam(Team team)
         {
             if (teams.Any(t => t.Id == team.Id))
             {
-                throw new ArgumentException($"Team with Id {team.Id} already exists in the field.", nameof(team));
+                return new ArgumentException($"Team with Id {team.Id} already exists in the field.", nameof(team));
             }
 
             teams.Add(team);
+            return (team);
         }
 
         public Option<Team> GetTeamById(int teamId)
