@@ -41,3 +41,6 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+HoopsService/obj/Debug/net8.0/apphost.exe
+HoopsService/obj/Debug/net8.0/HoopsService.assets.cache
+HoopsService/obj/Debug/net8.0/HoopsService.csproj.FileListAbsolute.txt
