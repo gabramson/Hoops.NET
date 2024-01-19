@@ -1,7 +1,5 @@
-using System;
-using Hoops.Service;
+using HoopsService.src.tournament;
 using LanguageExt;
-using Xunit;
 
 namespace HoopsService.Tests.tournament
 {

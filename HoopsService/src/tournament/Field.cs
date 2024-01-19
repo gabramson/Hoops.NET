@@ -1,6 +1,6 @@
 ﻿using LanguageExt;
 
-namespace Hoops.Service
+namespace HoopsService.src.tournament
 {
     public class Field
     {

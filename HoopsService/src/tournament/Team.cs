@@ -1,4 +1,5 @@
-﻿namespace Hoops.Service { 
+﻿namespace HoopsService.src.tournament
+{ 
     public class Team
     {
         public int Id { get; }

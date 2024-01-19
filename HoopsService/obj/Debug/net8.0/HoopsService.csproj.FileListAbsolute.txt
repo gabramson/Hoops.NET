@@ -28,3 +28,8 @@ E:\Projects\C#\Hoops.NET\HoopsService\obj\Debug\net8.0\refint\HoopsService.dll
 E:\Projects\C#\Hoops.NET\HoopsService\obj\Debug\net8.0\HoopsService.pdb
 E:\Projects\C#\Hoops.NET\HoopsService\obj\Debug\net8.0\HoopsService.genruntimeconfig.cache
 E:\Projects\C#\Hoops.NET\HoopsService\obj\Debug\net8.0\ref\HoopsService.dll
+E:\Projects\C#\Hoops.Net\HoopsService\obj\Debug\net8.0\HoopsService.sourcelink.json
+E:\Projects\C#\Hoops.Net\HoopsService\obj\Debug\net8.0\HoopsService.csproj.AssemblyReference.cache
+E:\Projects\C#\Hoops.Net\HoopsService\bin\Debug\net8.0\LanguageExt.Core.dll
+E:\Projects\C#\Hoops.Net\HoopsService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Projects\C#\Hoops.Net\HoopsService\obj\Debug\net8.0\HoopsService.csproj.CopyComplete
