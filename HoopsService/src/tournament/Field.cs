@@ -1,4 +1,6 @@
-﻿using LanguageExt;
+﻿using HoopsService.common;
+using LanguageExt;
+using LanguageExt.Common;
 
 namespace HoopsService.src.tournament
 {
@@ -11,15 +13,15 @@ namespace HoopsService.src.tournament
             teams = new List<Team>();
         }
 
-        public Either<Exception,Team> AddTeam(Team team)
+        public Either<Error, Success> AddTeam(Team team)
         {
             if (teams.Any(t => t.Id == team.Id))
             {
-                return new ArgumentException($"Team with Id {team.Id} already exists in the field.", nameof(team));
+                return Error.New($"Team with Id {team.Id} already exists in the field.", nameof(team));
             }
 
             teams.Add(team);
-            return (team);
+            return new Success();
         }
 
         public Option<Team> GetTeamById(int teamId)

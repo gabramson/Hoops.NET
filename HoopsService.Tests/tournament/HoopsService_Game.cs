@@ -28,7 +28,10 @@ namespace HoopsService.Tests.tournament{
             Game game = new Game();
             game.AddTeam(winner);
             var result = game.AddTeam(winner);
-            Assert.True(result.IsLeft);
+            result.Match(
+                Left: e => Assert.Equal("Team with Id 1 is already in the game.", e.Message),
+                Right: r => Assert.Fail("Should have thrown an error.")
+            );
         }
 
         [Fact]
@@ -41,7 +44,10 @@ namespace HoopsService.Tests.tournament{
             game.AddTeam(winner);
             game.AddTeam(loser);
             var result = game.AddTeam(extra);
-            Assert.True(result.IsLeft);
+            result.Match(
+                Left: e => Assert.Equal("Game already has 2 teams.", e.Message),
+                Right: r => Assert.Fail("Should have thrown an error.")
+            );
         }
     }
 }

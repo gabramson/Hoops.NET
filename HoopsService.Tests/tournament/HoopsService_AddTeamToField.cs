@@ -1,5 +1,7 @@
 using HoopsService.src.tournament;
+using HoopsService.common;
 using LanguageExt;
+using Xunit;
 
 namespace HoopsService.Tests.tournament
 {
@@ -52,11 +54,11 @@ namespace HoopsService.Tests.tournament
             var teamDePauw = new Team(1, "DePauw", 2);
             var field = new Field();
             field.AddTeam(teamDePaul).Match(
-                Left: e => Assert.Fail("Exception should not have been thrown"),
-                Right: team => Assert.Equal(teamDePaul, team));
+                Left: error => Assert.Fail("Should not have returned an error."),
+                Right: value => Assert.Equal(value, new Success()));
             field.AddTeam(teamDePauw).Match(
-                Left: e => Assert.Equal("Team with Id 1 already exists in the field. (Parameter 'team')", e.Message),
-                Right: team => Assert.Fail("Exception not thrown"));
+                Left: error => Assert.Equal("Team with Id 1 already exists in the field.", error.Message),
+                Right: value => Assert.Fail("Should not have returned a success."));
         }
     }
 }
