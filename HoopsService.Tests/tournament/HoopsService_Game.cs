@@ -22,6 +22,19 @@ namespace HoopsService.Tests.tournament{
         }
 
         [Fact]
+        public void HoopsService_GameShouldComputePlayableCorrectly(){
+            Team winner = new Team(1, "DePaul", 1);
+            Team loser = new Team(2, "Kansas", 2);
+            Game game = new Game();
+            game.AddTeam(winner);
+            Assert.False(game.IsPlayable());
+            game.AddTeam(loser);
+            Assert.True(game.IsPlayable());
+            game.RecordWinner(winner);
+            Assert.False(game.IsPlayable());
+        }
+
+        [Fact]
         public void HoopsService_GameShouldThrowErrorForDuplicateTeam(){
             Team winner = new Team(1, "DePaul", 1);
             

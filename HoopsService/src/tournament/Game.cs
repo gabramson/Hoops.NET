@@ -48,6 +48,7 @@ namespace HoopsService.src.tournament
             return new Success();
         }
         public bool HasWinner() => Winner.IsSome;
+        public bool IsPlayable() => teamSet.Count == 2 && Winner.IsNone;
         public Option<Team> Winner { get; private set; }
     }
 }
