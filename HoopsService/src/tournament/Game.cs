@@ -8,7 +8,7 @@ namespace HoopsService.src.tournament
 {
     public sealed class Game
     {
-        private int id;
+        public int id {get;}
         private System.Collections.Generic.HashSet<Team> teamSet = new System.Collections.Generic.HashSet<Team>();
 
         public Game(int id) {
@@ -25,6 +25,14 @@ namespace HoopsService.src.tournament
                 return Error.New($"Game already has 2 teams.");
             }
             teamSet.Add(team);
+            return new Success();
+        }
+
+        public Either<Error, Success> RemoveTeam(Team team){
+            if (!teamSet.Contains(team)) {
+                return Error.New($"Team with Id {team.Id} is not in the game.", nameof(team));
+            };
+            teamSet.Remove(team);
             return new Success();
         }
 

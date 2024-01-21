@@ -20,5 +20,20 @@ namespace HoopsService.Tests.tournament{
             var games = tournament.GetPlayableGames();
             Assert.Equal(32, games.Count);
         }
+
+        [Fact]
+        public void HoopsService_TournamentShouldTrackEvents(){
+            var field = MakeField();
+            var tournament = new Tournament(field);
+            var games = tournament.GetPlayableGames();
+            var winner = games[0].GetTeams()[0];
+            tournament.RecordWinner(games[0], winner);
+            var firstEvent = tournament.GetMostRecentEvents().First();
+            Assert.Equal(games[0], firstEvent.Game);
+            Assert.Equal(winner, firstEvent.Winner);
+            Assert.Equal(winner, games[0].Winner);
+            tournament.UndoMostRecentEvent();
+            Assert.True(games[0].IsPlayable());
+        }
     }
 }
