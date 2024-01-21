@@ -5,7 +5,7 @@ namespace HoopsService.Tests.tournament{
     public class HoopsService_Game{
         [Fact]
         public void HoopsService_NewGameShouldNotHaveWinner(){
-            Game game = new Game();
+            Game game = new Game(1);
             Assert.Equal(Option<Team>.None, game.Winner);
         }
         
@@ -14,7 +14,7 @@ namespace HoopsService.Tests.tournament{
             Team winner = new Team(1, "DePaul", 1);
             Team loser = new Team(2, "Kansas", 2);
 
-            Game game = new Game();
+            Game game = new Game(1);
             game.AddTeam(winner);
             game.AddTeam(loser);
             game.RecordWinner(winner);
@@ -25,7 +25,7 @@ namespace HoopsService.Tests.tournament{
         public void HoopsService_GameShouldComputePlayableCorrectly(){
             Team winner = new Team(1, "DePaul", 1);
             Team loser = new Team(2, "Kansas", 2);
-            Game game = new Game();
+            Game game = new Game(1);
             game.AddTeam(winner);
             Assert.False(game.IsPlayable());
             game.AddTeam(loser);
@@ -38,7 +38,7 @@ namespace HoopsService.Tests.tournament{
         public void HoopsService_GameShouldThrowErrorForDuplicateTeam(){
             Team winner = new Team(1, "DePaul", 1);
             
-            Game game = new Game();
+            Game game = new Game(1);
             game.AddTeam(winner);
             var result = game.AddTeam(winner);
             result.Match(
@@ -53,7 +53,7 @@ namespace HoopsService.Tests.tournament{
             Team loser = new Team(2, "Kansas", 2);
             Team extra = new Team(3, "Kentucky", 3);
 
-            Game game = new Game();
+            Game game = new Game(1);
             game.AddTeam(winner);
             game.AddTeam(loser);
             var result = game.AddTeam(extra);

@@ -8,9 +8,12 @@ namespace HoopsService.src.tournament
 {
     public sealed class Game
     {
+        private int id;
         private System.Collections.Generic.HashSet<Team> teamSet = new System.Collections.Generic.HashSet<Team>();
 
-        public Game() { }
+        public Game(int id) {
+            this.id = id;
+         }
 
         public Either<Error, Success> AddTeam(Team team)
         {
