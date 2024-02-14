@@ -1,0 +1,9 @@
+﻿@page
+@model Hoops.Net.Pages.RecordWinnerModel
+@foreach (var game in Model.PlayableGames)
+{
+    <div>
+        @game.GetTeams()[0].Name vs @game.GetTeams()[1].Name
+    </div> 
+}
+
